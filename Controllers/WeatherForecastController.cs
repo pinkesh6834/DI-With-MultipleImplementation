@@ -31,6 +31,7 @@ namespace DI_With_MultipleImplementation.Controllers
         [HttpGet]
         public WeatherForecast Get()
         {
+            _logger.LogInformation("Called WeatherForecastController : Get");
             return this.serviceOne.GetWeathData();
         }
 
